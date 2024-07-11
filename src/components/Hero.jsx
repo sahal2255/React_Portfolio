@@ -1,5 +1,6 @@
 import React from "react";
-import profilepic from "../assets/profpic.png";
+// import profilepic from "../assets/profpic.png";
+import ProfileImg from "../assets/profile.jpg"
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import {
@@ -72,32 +73,35 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 1.5 }}
                 className="flex flex-row items-center gap-6 my-4 md:mb-0"
                 >
-                    <motion.button whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}
-                        className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border
-                                     border-purple-400 rounded-xl"     
-                    >
-                        Download CV
-                    </motion.button>
+                     <motion.a
+              whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}
+              href="/Sahal_Resume.pdf"
+              className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border
+                             border-purple-400 rounded-xl"
+              download
+            >
+              Download CV
+            </motion.a>
 
                     <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
-                        <motion.a whileHover={{ scale: 1.2 }} href="#">
-                            <AiOutlineGithub/>
-                        </motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/sahal2255">
+                <AiOutlineGithub/>
+            </motion.a>
 
-                        <motion.a whileHover={{ scale: 1.2 }} href="#">
-                            <AiOutlineLinkedin/>
-                        </motion.a>
+            <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com/in/sahal-vv96">
+                <AiOutlineLinkedin/>
+            </motion.a>
 
-                        <motion.a whileHover={{ scale: 1.2 }} href="#">
-                            <AiOutlineInstagram/>
-                        </motion.a>
-                    </div>
+            <motion.a whileHover={{ scale: 1.2 }} href="https://instagram.com/">
+                <AiOutlineInstagram/>
+            </motion.a>
+        </div>
                 </motion.div>
             </motion.div>
 
 
             <motion.img 
-                src={profilepic}
+                src={ProfileImg}
                 className="w-[300px] md:w-[450px]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}

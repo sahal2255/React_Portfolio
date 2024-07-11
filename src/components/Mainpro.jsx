@@ -1,5 +1,5 @@
 import React from 'react';
-import project6 from "../assets/dryvitals.jpeg"
+import project6 from "../assets/dryvitals.png"
 
 import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai'
 import Reveal from './Reveal';
