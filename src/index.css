@@ -5,30 +5,35 @@
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  background-color: #190b1f;
+  background-color: #121212; /* Deep Black for background */
+  color: #E0E0E0; /* Light grey for readability */
 }
 
 h2 {
-  @apply text-xl md:text-4xl
+  @apply text-xl md:text-4xl text-gray-300; /* Soft Grey for headings */
 }
 
 p {
-  @apply text-xl tracking-tight leading-relaxed
+  @apply text-xl tracking-tight leading-relaxed text-gray-400; /* Slightly darker grey for paragraphs */
 }
 
 span {
-  @apply text-purple-600
+  @apply text-gray-500; /* Darker grey shade for highlighted text */
 }
-
 
 .shiny-effect {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
-  background: radial-gradient(circle, rgba(178, 19, 202, 0.2), transparent 70%);
+  background: radial-gradient(circle, rgba(96, 96, 96, 0.3), transparent 70%); /* Grey radial gradient for subtle shine */
 }
 
 .bg-primary-color {
-    @apply bg-purple-600
+  @apply bg-gray-700; /* Dark Grey for primary elements */
+}
+
+/* Adding a hover effect to primary color elements */
+.bg-primary-color:hover {
+  @apply bg-gray-600; /* Lighter grey shade on hover */
 }

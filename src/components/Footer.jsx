@@ -8,8 +8,8 @@ const Footer = () => {
             <h3 className='text-2xl text-gray-200 font-semibold'>SAHAL V V</h3>
             <div className='flex flex-row gap-6 text-gray-400 text-4xl'>
             <a href="https://github.com/sahal2255" target="_blank" rel="noopener noreferrer">
-  <FaGithubSquare />
-</a>
+              <FaGithubSquare />
+            </a>
                 <a href="https://instagram.com/_.sahal_vv"><FaInstagram /></a>
             </div>
 
