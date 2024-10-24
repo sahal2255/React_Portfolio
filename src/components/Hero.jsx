@@ -1,6 +1,5 @@
 import React from "react";
 // import profilepic from "../assets/profpic.png";
-import ProfileImg from "../assets/profile.jpg";
 import MyImage from '../assets/myImage.png'
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
