@@ -101,23 +101,27 @@ const Hero = () => {
           transition={{ duration: 1 }}
         />
       </div>
-
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 2 }}
-        className="flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
-      >
-        <p className="text-gray-200 mr-6">My Tech Stack</p>
-        <SiMongodb className="text-green-500 mx-2 bg-white rounded-lg"/>
-        <SiExpress className="text-black mx-2 bg-white rounded-lg"/>
-        <DiReact className="text-blue-500 mx-2 bg-white rounded-lg" />
-        <DiNodejsSmall className="text-green-500 mx-2 bg-white rounded-lg" />
-        <DiJavascript1 className="text-black bg-yellow-400 rounded-lg mx-2" />
-        <DiHtml5 className="text-orange-600 mx-2 bg-white rounded-lg" />
-        <DiCss3 className="text-blue-600 mx-2 bg-white rounded-lg" />
-      </motion.div>
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 1, delay: 2 }}
+  className="flex flex-col items-center py-24 w-full"
+>
+  <p className="text-gray-200 text-xl md:text-2xl mb-4">My Tech Stack</p>
+  
+  <div className="flex mb-4 flex-wrap justify-center items-center">
+    <SiMongodb className="text-green-500 mx-2 text-6xl md:text-8xl bg-white rounded-lg p-2" />
+    <SiExpress className="text-black mx-2 text-6xl md:text-8xl bg-white rounded-lg p-2" />
+    <DiReact className="text-blue-500 mx-2 text-6xl md:text-8xl bg-white rounded-lg p-2" />
+    <DiNodejsSmall className="text-green-500 mx-2 text-6xl md:text-8xl bg-white rounded-lg p-2" />
+    <DiJavascript1 className="text-black bg-yellow-400 rounded-lg mx-2 text-6xl md:text-8xl p-2" />
+    <DiHtml5 className="text-orange-600 mx-2 text-6xl md:text-8xl bg-white rounded-lg p-2" />
+    <DiCss3 className="text-blue-600 mx-2 text-6xl md:text-8xl bg-white rounded-lg p-2" />
+  </div>
+</motion.div>
+
+
 
       <div className="absolute inset-0 hidden md:block">
         <ShinyEffect left={0} top={0} size={1400} />
