@@ -2,18 +2,36 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
-
+import toast from "react-hot-toast";
 const Contact = () => {
+
+  
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    console.log("Submitting form data:", data);
+  
+    try {
+      const sheetUrl = import.meta.env.VITE_SHEET_URL;
+      const response = await fetch(sheetUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+        mode: 'no-cors' 
+      });
+  
+      toast.success("Message sent successfully!")
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      toast.error('Please try again later')
+    }
   };
-
   return (
     <div className="bg-gray-800 max-w-max px-6 py-12 mx-auto md:my-12 rounded-lg shadow-lg" id="contact">
       <Reveal>
@@ -82,7 +100,7 @@ const Contact = () => {
               <AiFillGithub />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin-id"
+              href="https://linkedin.com/in/sahal-vv96"
               target="_blank"
               rel="noopener noreferrer"
               className="text-3xl hover:text-blue-500 transition duration-300"

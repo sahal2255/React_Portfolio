@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Mainpro from "./components/Mainpro"
 import Skills from "./components/Skills";
 import About from "./components/About";
+import { Toaster } from "react-hot-toast";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Portfolio/>
       {/* <Experience/> */}
       <Contact/>
+      <Toaster />
       <Footer/>
     </>
   )
