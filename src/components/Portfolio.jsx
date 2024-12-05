@@ -34,15 +34,7 @@ const projects = [
       github: "https://github.com/sahal2255/React-Kanban",
     },
   },
-  {
-    img: project2,
-    title: "React QRCode Generator",
-    description: "UI for frontend development using React.",
-    links: {
-      site: "https://react-qrcode-omega.vercel.app/",
-      github: "https://github.com/sahal2255/reactQrcode",
-    },
-  },
+  
   
 ];
 

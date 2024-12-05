@@ -6,15 +6,6 @@ import Reveal from './Reveal';
 
 const projects = [
   {
-    img: project6,
-    title: "DryVitals",
-    description: `DryVitals.shop is an e-commerce website built to provide users with a seamless shopping experience. The frontend is developed using HTML, CSS, and Bootstrap, ensuring a responsive and visually appealing interface. On the server side, Node.js using to create a backend while MongoDB serves as the database for managing product listings, user data, and orders.`,
-    links: {
-      site: "https://dryvitals.shop",
-      github: "https://github.com/sahal2255/dryvitals",
-    },
-  },
-  {
     img: QuickFix,
     title: "QuickFix",
     description:
@@ -25,6 +16,15 @@ const projects = [
       githubBackend: "https://github.com/sahal2255/QuickFix_Frontend",
     },
   },
+  {
+    img: project6,
+    description: `DryVitals.shop is an e-commerce website built to provide users with a seamless shopping experience. The frontend is developed using HTML, CSS, and Bootstrap, ensuring a responsive and visually appealing interface. On the server side, Node.js using to create a backend while MongoDB serves as the database for managing product listings, user data, and orders.`,
+    links: {
+      site: "https://dryvitals.shop",
+      github: "https://github.com/sahal2255/dryvitals",
+    },
+  },
+  
 ];
 
 const Portfolio = () => {
