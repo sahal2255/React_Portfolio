@@ -8,8 +8,9 @@ import {
   DiNodejsSmall,
   DiMongodb,
   DiGithubBadge,
+  
 } from "react-icons/di";
-import { SiExpress, SiPostman, SiVisualstudiocode, SiGit,SiTailwindcss } from "react-icons/si";
+import { SiExpress, SiPostman, SiVisualstudiocode, SiGit,SiTailwindcss,SiRedux } from "react-icons/si";
 import Reveal from "./Reveal";
 
 const skills = [
@@ -21,7 +22,8 @@ const skills = [
       { name: "Bootstrap", icon: <DiBootstrap className="text-purple-600" /> },
       { name: "JavaScript", icon: <DiJavascript1 className="text-yellow-500" /> },
       { name: "React", icon: <DiReact className="text-blue-500" /> },
-      {name:"Tailwind Css" , icon:<SiTailwindcss  className="text-blue-500"/>}
+      {name:"Tailwind Css" , icon:<SiTailwindcss  className="text-blue-500"/>},
+      {name :"Redux ", icon:<SiRedux className="text-purple-700"/> }
     ],
   },
   {

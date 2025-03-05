@@ -1,5 +1,5 @@
 import React from 'react';
-import project2 from "../assets/qrcode.png";
+// import project2 from "../assets/qrcode.png";
 import project4 from "../assets/weather.png";
 import project6 from "../assets/parking.png";
 import project7 from "../assets/kanban.png";
