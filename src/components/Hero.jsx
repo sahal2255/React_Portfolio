@@ -69,7 +69,7 @@ const Hero = () => {
           >
             <motion.a
               whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}
-              href="/Sahal_Resume.pdf"
+              href="/Sahalvv_Resume.pdf"
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-gray-400 " // Updated to gray border
               download
             >
